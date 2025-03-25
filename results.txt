@@ -1,0 +1,15 @@
+Model,Precision,Recall,F1-Score
+Decision Tree,0.31,0.77,0.44
+Naive Bayes,0.35,0.67,0.46
+Quadratic Descriminant,0.33,0.77,0.46
+Bagging Classifier,0.33,0.82,0.47
+Logistic Regression,0.35,0.72,0.47
+Linear Descriminant,0.35,0.72,0.47
+SGD,0.35,0.72,0.47
+Extra Trees Classifier,0.33,0.89,0.48
+Random Forest,0.34,0.88,0.49
+Adaboost,0.36,0.80,0.49
+Gradient Boost,0.36,0.80,0.50
+XGBoost,0.37,0.80,0.51
+LightGBM,0.37,0.81,0.51
+Simple MLP,0.37,0.78,0.51
