@@ -11,12 +11,6 @@ feature_cols = ['depth_1', 'depth_2', 'depth_3', 'depth_4', 'depth_5',
     'depth_12', 'depth_13', 'depth_14', 'depth_15', 'depth_16', 'depth_17',
     'depth_18', 'depth_19', 'depth_20', 'best_move_eval', 'player_rating',
     'sigmoid_eval_ratio']
-feature_cols = ['depth_5',
-    'depth_10', 'depth_15', 'depth_20', 'best_move_eval', 'player_rating',
-    'sigmoid_eval_ratio']
-
-feature_cols = ['depth_5',
-    'depth_10', 'depth_15', 'depth_20', 'best_move_eval', 'best_minus_depth', 'player_rating']
 
 def balance_data(df, target_column='label', samples_per_class=100000):
     """Balances a DataFrame by randomly undersampling the majority class."""
@@ -36,14 +30,12 @@ def balance_data(df, target_column='label', samples_per_class=100000):
 def load_data():
     df = pd.read_csv("dataset/train_norm.txt", delimiter=",", low_memory=True)
     df = df.drop_duplicates()
-    df["best_minus_depth"] = df["best_move_eval"] - df[feature_cols[:4]].mean(axis=1)
-    # df = balance_data(df)
+    df = balance_data(df)
     X_train = df[feature_cols]
     y_train = df['label']
 
     df = pd.read_csv("dataset/test_norm.txt", delimiter=",", low_memory=True)
     df = df.drop_duplicates()
-    df["best_minus_depth"] = df["best_move_eval"] - df[feature_cols[:4]].mean(axis=1)
     X_test = df[feature_cols]
     y_test = df['label']
     
@@ -77,7 +69,7 @@ def evaluate(X_test, y_test, model):
 def save_shap(X_train, X_test, model, save_path):
     background_sample_train = shap.sample(X_train, 100)
     background_sample_test = shap.sample(X_test, 100)
-    try:predict_func = model.predict_proba
+    try: predict_func = model.predict_proba
     except: predict_func = model.predict_log_proba
     explainer = shap.KernelExplainer(predict_func, background_sample_train)
     
