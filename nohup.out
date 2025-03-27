@@ -443,7 +443,7 @@ Classification Report:
               precision    recall  f1-score   support
 
          0.0       0.90      0.56      0.69    214417
-         1.0       0.37      0.81      0.51     68546
+         1.0       0.37      0.80      0.51     68546
 
     accuracy                           0.62    282963
    macro avg       0.63      0.68      0.60    282963
@@ -458,7 +458,7 @@ Classification Report:
               precision    recall  f1-score   support
 
          0.0       0.77      0.62      0.69    531841
-         1.0       0.68      0.81      0.74    531841
+         1.0       0.68      0.80      0.74    531841
 
     accuracy                           0.72   1063682
    macro avg       0.72      0.72      0.71   1063682
@@ -519,4 +519,149 @@ Confusion Matrix:
 [[315036 216805]
  [119099 412742]]
 evaluated
+--------------------------------------------------
+data loaded.
+--------------------------------------------------
+Decision Tree
+model trained.
+evaluating test
+Accuracy: 0.626070637717087
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.89      0.58      0.70    218247
+         1.0       0.37      0.77      0.50     68965
+
+    accuracy                           0.63    287212
+   macro avg       0.63      0.68      0.60    287212
+weighted avg       0.76      0.63      0.65    287212
+
+Confusion Matrix:
+[[126399  91848]
+ [ 15549  53416]]
+evaluating train
+Accuracy: 0.6797875710765955
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.73      0.58      0.64   1698168
+         1.0       0.65      0.78      0.71   1698168
+
+    accuracy                           0.68   3396336
+   macro avg       0.69      0.68      0.68   3396336
+weighted avg       0.69      0.68      0.68   3396336
+
+Confusion Matrix:
+[[ 980395  717773]
+ [ 369776 1328392]]
+evaluated
+['depth_1', 'depth_2', 'depth_3', 'depth_4', 'depth_5', 'depth_6', 'depth_7', 'depth_8', 'depth_9', 'depth_10', 'depth_11', 'depth_12', 'depth_13', 'depth_14', 'depth_15', 'depth_16', 'depth_17', 'depth_18', 'depth_19', 'depth_20', 'best_move_eval', 'player_rating', 'sigmoid_eval_ratio']
+--------------------------------------------------
+--------------------------------------------------
+Extra Trees Classifier
+model trained.
+evaluating test
+Accuracy: 0.6159074133392756
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.87      0.58      0.70    218247
+         1.0       0.35      0.71      0.47     68965
+
+    accuracy                           0.62    287212
+   macro avg       0.61      0.65      0.59    287212
+weighted avg       0.74      0.62      0.64    287212
+
+Confusion Matrix:
+[[127595  90652]
+ [ 19664  49301]]
+evaluating train
+Accuracy: 0.6489354999034254
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.67      0.58      0.62   1698168
+         1.0       0.63      0.71      0.67   1698168
+
+    accuracy                           0.65   3396336
+   macro avg       0.65      0.65      0.65   3396336
+weighted avg       0.65      0.65      0.65   3396336
+
+Confusion Matrix:
+[[ 990256  707912]
+ [ 484421 1213747]]
+evaluated
+['depth_1', 'depth_2', 'depth_3', 'depth_4', 'depth_5', 'depth_6', 'depth_7', 'depth_8', 'depth_9', 'depth_10', 'depth_11', 'depth_12', 'depth_13', 'depth_14', 'depth_15', 'depth_16', 'depth_17', 'depth_18', 'depth_19', 'depth_20', 'best_move_eval', 'player_rating', 'sigmoid_eval_ratio']
+--------------------------------------------------
+--------------------------------------------------
+Bagging Classifier
+model trained.
+evaluating test
+Accuracy: 0.622042254501901
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.89      0.57      0.70    218247
+         1.0       0.37      0.79      0.50     68965
+
+    accuracy                           0.62    287212
+   macro avg       0.63      0.68      0.60    287212
+weighted avg       0.77      0.62      0.65    287212
+
+Confusion Matrix:
+[[124378  93869]
+ [ 14685  54280]]
+evaluating train
+Accuracy: 0.6807271129829322
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.73      0.57      0.64   1698168
+         1.0       0.65      0.79      0.71   1698168
+
+    accuracy                           0.68   3396336
+   macro avg       0.69      0.68      0.68   3396336
+weighted avg       0.69      0.68      0.68   3396336
+
+Confusion Matrix:
+[[ 964428  733740]
+ [ 350618 1347550]]
+evaluated
+['depth_1', 'depth_2', 'depth_3', 'depth_4', 'depth_5', 'depth_6', 'depth_7', 'depth_8', 'depth_9', 'depth_10', 'depth_11', 'depth_12', 'depth_13', 'depth_14', 'depth_15', 'depth_16', 'depth_17', 'depth_18', 'depth_19', 'depth_20', 'best_move_eval', 'player_rating', 'sigmoid_eval_ratio']
+--------------------------------------------------
+--------------------------------------------------
+Random Forest
+model trained.
+evaluating test
+Accuracy: 0.6180277982814089
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.89      0.56      0.69    218247
+         1.0       0.36      0.79      0.50     68965
+
+    accuracy                           0.62    287212
+   macro avg       0.63      0.68      0.59    287212
+weighted avg       0.77      0.62      0.65    287212
+
+Confusion Matrix:
+[[123158  95089]
+ [ 14618  54347]]
+evaluating train
+Accuracy: 0.6773104898926372
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.73      0.56      0.64   1698168
+         1.0       0.64      0.79      0.71   1698168
+
+    accuracy                           0.68   3396336
+   macro avg       0.69      0.68      0.67   3396336
+weighted avg       0.69      0.68      0.67   3396336
+
+Confusion Matrix:
+[[ 954987  743181]
+ [ 352781 1345387]]
+evaluated
+['depth_1', 'depth_2', 'depth_3', 'depth_4', 'depth_5', 'depth_6', 'depth_7', 'depth_8', 'depth_9', 'depth_10', 'depth_11', 'depth_12', 'depth_13', 'depth_14', 'depth_15', 'depth_16', 'depth_17', 'depth_18', 'depth_19', 'depth_20', 'best_move_eval', 'player_rating', 'sigmoid_eval_ratio']
 --------------------------------------------------
